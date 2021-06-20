@@ -10,7 +10,6 @@ class ClickPage:
     def press_button(self):
         blue_button = self.browser.find_element(By.ID, 'badButton').click()
 
-
     def check_clickability(self):
         self.browser.find_element(By.ID, 'badButton').click()
         return True

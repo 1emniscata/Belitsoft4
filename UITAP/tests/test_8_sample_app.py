@@ -1,10 +1,6 @@
-import pytest
-
-from selenium.webdriver import Chrome
-from selenium.webdriver.common.keys import Keys
-
 from pages.base_page import BasePage
 from pages.page_object8 import SampleAppPage
+
 
 def test_sample_app(browser):
     URL = 'http://uitestingplayground.com/sampleapp'

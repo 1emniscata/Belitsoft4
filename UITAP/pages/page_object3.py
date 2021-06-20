@@ -1,7 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
-import time
 
 
 class ScrollbarsPage:
@@ -10,13 +7,13 @@ class ScrollbarsPage:
         self.browser = browser
 
     def scroll(self):
-        self.browser.execute_script('window.scrollTo(0,document.body.scrollHeight/1.5);')
+        self.browser.execute_script('window.scrollTo(0,document.body.scrollHeight);')
         # time.sleep(5)
-        self.browser.execute_script('window.scrollTo(0,document.body.scrollWidth/1.5);')
+        self.browser.execute_script('window.scrollTo(0,document.body.scrollWidth);')
         # time.sleep(5)
 
     def check_button_visibility(self):
-        button_visabilty = self.browser.find_element(By.ID, "hidingButton").is_enabled()
+        button_visibilty = self.browser.find_element(By.ID, "hidingButton").is_enabled()
         self.browser.find_element(By.ID, "hidingButton").click()
-        return button_visabilty
+        return button_visibilty
 

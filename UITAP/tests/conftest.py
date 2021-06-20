@@ -1,11 +1,5 @@
-import json
 import pytest
-
-from selenium.webdriver import Chrome, Firefox
-
-CONFIG_PATH = 'tests/config.json'
-DEFAULT_WAIT_TIME = 10
-SUPPORTED_BROWSERS = ['chrome', 'firefox']
+from selenium.webdriver import Chrome
 
 
 @pytest.fixture

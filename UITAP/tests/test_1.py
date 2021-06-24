@@ -1,5 +1,3 @@
-import allure
-
 from pages.base_page import BasePage
 from pages.page_object import OnlinerPage
 

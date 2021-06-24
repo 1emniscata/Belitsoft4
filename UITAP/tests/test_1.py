@@ -13,7 +13,4 @@ def test_accoradance(browser):
 
     elements_page = OnlinerPage(browser)
     first_part = elements_page.go_to_catalog_elemenent()
-
-
-    with allure.step("Test3: scrollbars"):
-        assert elements_page.find_price_through_search(first_part), f"It's possible to see one or more buttons"
+    assert elements_page.find_price_through_search(first_part)
